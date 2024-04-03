@@ -1,0 +1,1 @@
+SELECT moto_types.name_type AS moto_type, COUNT(*) AS total_count FROM moto_table INNER JOIN moto_types ON moto_types.moto_type_id = moto_table.moto_type_id WHERE moto_table.retire_status != 'retired' GROUP BY moto_types.moto_type_id;
