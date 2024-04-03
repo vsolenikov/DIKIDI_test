@@ -1,7 +1,6 @@
 <html>
 <head>
 <!--    Bootstrap3 загрузил с сайта https://getbootstrap.com/docs/3.4/getting-started/-->
-
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
@@ -12,7 +11,7 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="pattern">
 <header>
     <div class="container">
         <div class="row">
@@ -21,7 +20,7 @@
         </div>
     </div>
 </header>
-<main class="pattern">
+<main>
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-md-4 col-md-offset-4">
