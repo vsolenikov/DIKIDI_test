@@ -3,8 +3,7 @@ $site_dir = '/'.substr($_SERVER['DOCUMENT_ROOT'], 3).'/';
 $path = $site_dir;
 //Решил брать путь из GET-параметров
 //Здесь проверяем если есть GET-параметр dir и он подходит под корневую папку ИЛИ ЖЕ этот параметр вовсе отсутствует то отображаем файловый менеджер, иначе выдаём ошибку доступа
-if ((isset($_GET['dir']) && strpos($_GET['dir'], $site_dir) !== false) || empty($_GET['dir'])) {
-
+if (isset($_GET['dir']) && strpos(realpath($_GET['dir']), realpath($_SERVER['DOCUMENT_ROOT'])) !== false || empty($_GET['dir'])) {
     if (isset($_GET['dir'])) {
         $newDir = $_GET['dir'];
         if (is_dir($newDir)) {
