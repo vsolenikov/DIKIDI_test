@@ -48,7 +48,8 @@ INSERT INTO `moto_table` (`moto_id`, `moto_name`, `prod_status`, `moto_type_id`)
                                                                                      (8, 'Moto_7', 0, 1),
                                                                                      (9, 'Motorolla', 1, 3),
                                                                                      (15, 'Motorcycle', 5, 3),
-                                                                                     (16, 'Mottor', 1, 3);
+                                                                                     (16, 'Mottor', 1, 3),
+                                                                                     (17, 'New_Moto', 1, 3);
 
 -- --------------------------------------------------------
 
@@ -68,7 +69,8 @@ CREATE TABLE `moto_types` (
 INSERT INTO `moto_types` (`moto_type_id`, `name_type`) VALUES
                                                            (1, 'Type_1'),
                                                            (2, 'Type_2'),
-                                                           (3, 'Type_3');
+                                                           (3, 'Type_3'),
+                                                           (4, 'Old_Type_1');
 
 --
 -- Индексы сохранённых таблиц
@@ -95,13 +97,13 @@ ALTER TABLE `moto_types`
 -- AUTO_INCREMENT для таблицы `moto_table`
 --
 ALTER TABLE `moto_table`
-    MODIFY `moto_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+    MODIFY `moto_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT для таблицы `moto_types`
 --
 ALTER TABLE `moto_types`
-    MODIFY `moto_type_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+    MODIFY `moto_type_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Ограничения внешнего ключа сохраненных таблиц
